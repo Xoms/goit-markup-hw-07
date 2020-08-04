@@ -1,5 +1,5 @@
 # goit-markup-hw-07
-##https://xoms.github.io/goit-markup-hw-07/
+## https://xoms.github.io/goit-markup-hw-07/
 
 - Создай репозиторий `goit-markup-hw-07`.
 - Склонируй новый репозиторий и перенеси в него файлы предыдущей работы.
