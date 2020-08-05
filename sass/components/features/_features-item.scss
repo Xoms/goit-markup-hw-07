@@ -1,4 +1,9 @@
 .features__item {
+    width: calc((100%-3*30px)/4);
+
+    &:not(:last-child){
+        margin-right: 30px;
+    }
     &-icon{
         height: 70px;
         width: 70px;
@@ -14,10 +19,4 @@
         line-height: 1.71;
         color:var(--secondary-text);
     }
-}
-.features__svg-container{
-    display: flex;
-    padding: 25px 100px;
-    background-color: var(--secondary-bg);
-    margin-bottom: 30px;
 }

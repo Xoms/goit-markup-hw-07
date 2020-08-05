@@ -62,7 +62,7 @@
                 для вашего бизнеса
             </h1>
         
-            <button type="button" class="btn main-btn hero__button">
+            <button type="button" class="hero__button">
                 Заказать услугу
             </button>    
         </section>
@@ -72,10 +72,9 @@
             <div class="container">
                 <h2 class="features__title title--hidden">Особенности</h2> <!--скрыть-->
                 
-                <ul class="features__list list">
-
+                <ul class="list">
                     <!--Features item 1-->
-                    <li class="features__list-item">
+                    <li class="features__item">
                         <div class="features__svg-container">
                             <svg class="features__item-icon">
                                 <use href="./images/sprite.svg#icon-feature1"></use>
@@ -91,7 +90,7 @@
                     </li>
 
                     <!--Features item 2-->
-                    <li class="features__list-item  ">
+                    <li class="features__item">
                         <div class="features__svg-container">
                             <svg class="features__item-icon">
                                 <use href="./images/sprite.svg#icon-feature2"></use>
@@ -107,7 +106,7 @@
                     </li>
 
                         <!--Features item 3-->
-                    <li class="features__list-item">
+                    <li class="features__item">
                         <div class="features__svg-container">
                             <svg class="features__item-icon">
                                 <use href="./images/sprite.svg#icon-feature3"></use>
@@ -124,7 +123,7 @@
 
 
                 <!--Features item 4-->
-                    <li class="features__list-item">
+                    <li class="features__item">
                         <div class="features__svg-container">
                             <svg class="features__item-icon">
                                 <use href="./images/sprite.svg#icon-feature4"></use>
@@ -147,23 +146,23 @@
         <!--Activities Section-->
         <section class="activities">
             <div class="container activities__container">				
-                <h2 class="section-title activities__title">
+                <h2 class="section__title">
                     Чем мы занимаемся
                 </h2>
-                <ul class="activities__list list">
-                    <li class="activities__list-item">
+                <ul class="list">
+                    <li class="activities__item">
                         <img class="activities__item-img" src="./images/activities/activity1.jpg" alt="Десктопные приложения">
                         <h3 class="item-title activities__item-title">
                             Десктопные приложения
                         </h3>
                     </li>
-                    <li class="activities__list-item">
+                    <li class="activities__item">
                         <img class="activities__item-img" src="./images/activities/activity2.jpg" alt="Мобильные приложения">
                         <h3 class="item-title activities__item-title">
                             Мобильные приложения
                         </h3>
                     </li>
-                    <li class="activities__list-item">
+                    <li class="activities__item">
                         <img class="activities__item-img" src="./images/activities/activity3.jpg" alt="Дизайнерские решения">
                         <h3 class="item-title activities__item-title">
                             Дизайнерские решения
@@ -177,12 +176,11 @@
         <section class="team section--padding">
             <div class="container">
                 
-                <h2 class="section-title team__title">
+                <h2 class="section__title">
                     Наша команда
                 </h2>
     
-                <ul class="team__list list">
-                
+                <ul class="list">                
                     <!--Team-card 1-->
                     <li class="team__card">
                         <img class="team__card-img" src="images/team/desktop/card1.jpg" alt="Николай Кучеренко" width="270">
@@ -358,7 +356,7 @@
         <!--Clients Section-->
         <section class="clients section--padding">
             <div class="container">
-                <h2 class="section-title clients__title">
+                <h2 class="section__title">
                     Постоянные клиенты
                 </h2>
                 <ul class="clients__list list">
@@ -475,7 +473,7 @@
                      for="subscriptionFormEmail">Email</label>
                     
 
-                    <button class="subscription-form__btn btn main-btn">
+                    <button class="subscription-form__btn">
                         <span>Подписаться</span>
                         <svg class="icon-send">
                             <use href="./images/sprite.svg#icon-send"></use>
@@ -553,7 +551,7 @@
             </div>
             
     
-            <button class="modal-form__btn-send btn main-btn" type="submit">
+            <button class="modal-form__btn-send" type="submit">
                 Отправить
             </button>
     

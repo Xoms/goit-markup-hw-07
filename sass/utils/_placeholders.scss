@@ -1,4 +1,4 @@
-.btn {
+%btn {
     display: block;
     font-size: 16px;
 
@@ -6,12 +6,11 @@
     border-radius: 4px;
     &:hover,&:focus {
         outline:none;
-        border:none;
         cursor: pointer;
     }
-    
 }
-.main-btn {   
+
+%main-btn{
     color: var(--light-text);
     background-color: var(--accent);
     line-height: 1.875;

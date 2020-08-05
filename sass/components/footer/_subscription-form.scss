@@ -43,6 +43,9 @@
 }
 
 .subscription-form__btn{
+    @extend %btn;
+    @extend %main-btn;
+
     display: flex;
     align-items: center;
     padding-top: 10px;

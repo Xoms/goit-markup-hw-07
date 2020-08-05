@@ -5,6 +5,7 @@
 }
 
 .filters__btn {
+    @extend %btn;
     padding: 6px 22px;
 
     font-family: "Roboto-Medium", sans-serif;

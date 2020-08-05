@@ -320,13 +320,34 @@ summary {
   display: list-item;
 }
 
+.hero__button, .subscription-form__btn, .modal-form__btn-send {
+  display: block;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+.hero__button:hover, .subscription-form__btn:hover, .modal-form__btn-send:hover, .hero__button:focus, .subscription-form__btn:focus, .modal-form__btn-send:focus {
+  outline: none;
+  cursor: pointer;
+}
+
+.hero__button, .subscription-form__btn, .modal-form__btn-send {
+  color: var(--light-text);
+  background-color: var(--accent);
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+}
+
 /*common*/
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
@@ -431,26 +452,6 @@ a:hover {
   fill: currentColor;
 }
 
-.btn {
-  display: block;
-  font-size: 16px;
-  border: none;
-  border-radius: 4px;
-}
-
-.btn:hover, .btn:focus {
-  outline: none;
-  border: none;
-  cursor: pointer;
-}
-
-.main-btn {
-  color: var(--light-text);
-  background-color: var(--accent);
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-}
-
 .logo {
   display: block;
   font-size: 26px;
@@ -470,10 +471,11 @@ a:hover {
   padding: 94px 0;
 }
 
-.section-title {
+.section__title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .title--hidden {
@@ -589,14 +591,11 @@ a:hover {
   color: currentColor;
 }
 
-.features__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.features__item {
+  width: calc((100%-3*30px)/4);
 }
 
-.features__list-item:not(:last-child) {
-  width: calc((100%-3*30px)/4);
+.features__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -631,22 +630,12 @@ a:hover {
   padding-bottom: 94px;
 }
 
-.activities__title {
-  margin-bottom: 50px;
-}
-
-.activities__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.activities__list-item {
+.activities__item {
   width: calc((100%-2*30px)/3);
   position: relative;
 }
 
-.activities__list-item:not(:last-child) {
+.activities__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -668,16 +657,6 @@ a:hover {
 
 .team {
   background-color: var(--secondary-bg);
-}
-
-.team__title {
-  margin-bottom: 50px;
-}
-
-.team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .team__card {
@@ -711,14 +690,7 @@ a:hover {
   font-family: "Roboto-Regular", sans-serif;
 }
 
-.clients__title {
-  margin-bottom: 50px;
-}
-
 .clients__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }

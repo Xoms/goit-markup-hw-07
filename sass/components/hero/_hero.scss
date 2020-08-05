@@ -25,6 +25,9 @@
     text-align: center;       
 }
 .hero__button{
+    @extend %btn;
+    @extend %main-btn;
+    
     margin-left: auto; 
     margin-right: auto;       
     padding: 10px 32px;

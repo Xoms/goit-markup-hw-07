@@ -1,20 +1,18 @@
-
 .section--padding{
     padding: 94px 0;
 }
-.section-title {
+.section__title {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    margin-bottom: 50px;
 }
-
 .title--hidden {
     height: 0;
     width: 0;
     margin: 0;
     overflow: hidden;
 }
-
 .item-title {
     font-size: 14px;
     line-height: 1.14;
