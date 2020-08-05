@@ -1,0 +1,23 @@
+.features__item {
+    &-icon{
+        height: 70px;
+        width: 70px;
+        color: currentColor;
+    }
+    &-title{
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+    &-text{
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 14px;        
+        line-height: 1.71;
+        color:var(--secondary-text);
+    }
+}
+.features__svg-container{
+    display: flex;
+    padding: 25px 100px;
+    background-color: var(--secondary-bg);
+    margin-bottom: 30px;
+}

@@ -1,0 +1,12 @@
+.activities__list {        
+    display: flex;
+
+    &-item{
+        width: calc((100%-2*30px)/3);
+        position: relative;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }    
+}

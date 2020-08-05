@@ -1,0 +1,9 @@
+.modal-form__input-container{
+    position: relative;
+    &:not(:last-child){
+        margin-bottom: 28px;
+    }
+    &:last-child{
+        margin-bottom: 20px;
+    }
+}

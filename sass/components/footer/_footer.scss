@@ -1,0 +1,22 @@
+.footer {
+    color: var(--light-text);
+
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+    line-height: 1.71;
+    background-color: var(--footer-bg);
+}
+.footer__container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+}
+.footer__action-text{     
+    display: block;   
+    margin-bottom: 20px;
+    
+    font-family: "Roboto-Bold";
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 1.14;        
+}

@@ -1,0 +1,8 @@
+.features__list{
+    display: flex;
+    
+    &-item:not(:last-child){
+        width: calc((100%-3*30px)/4);
+        margin-right: 30px;
+    }       
+}

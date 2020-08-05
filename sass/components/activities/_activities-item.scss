@@ -1,0 +1,15 @@
+.activities__item-img {
+    display: block;
+}
+.activities__item-title{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    background-color: var(--activity-title-bg);        
+    text-align: center;
+    text-transform: uppercase;     
+    color: var(--light-text);
+}    

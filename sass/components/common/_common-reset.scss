@@ -1,0 +1,27 @@
+/*common*/
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body{
+    color: var(--main-text);
+    background-color: var(--main-bg);
+    font-family: "Roboto-Bold", sans-serif;
+    letter-spacing: 0.03em;
+}
+
+h1,h2,h3,p {
+    margin: 0;
+    pointer-events: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--main-text);
+}
+
+a:hover {
+    cursor: pointer;    
+}

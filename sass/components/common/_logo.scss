@@ -1,0 +1,12 @@
+.logo {
+    display: block;
+    font-size: 26px;
+    line-height: 1.19;
+    font-family: "Raleway-Bold", sans-serif;
+    &--accent{
+        color: var(--accent);
+    }
+    &--inverse{
+        color: var(--light-text);
+    }
+}

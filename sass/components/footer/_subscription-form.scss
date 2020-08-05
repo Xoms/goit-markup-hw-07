@@ -1,0 +1,59 @@
+.subscription-form__controls{
+    display: flex;
+    position: relative;
+}
+.subscription-form__email-label{
+    position: absolute;
+    top: 15px;
+    left: 16px;
+
+    font-size: 16px;  
+    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    .subscription-form__email-input:hover + &,
+    .subscription-form__email-input:focus + &,
+    .subscription-form__email-input:not(:placeholder-shown) + & {
+        color: var(--accent);
+        transform: translateY(-150%);
+        
+    }
+}
+.subscription-form__email-input {
+    margin-right: 12px;
+    height: 50px;
+    width: 358px;
+
+    color:var(--light-text);
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),;
+
+    &:hover, &:focus {
+        outline: none;
+        border-color: var(--accent);
+    }
+}
+
+.subscription-form__btn{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-right: 28px;
+}
+
+.icon-send {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}

@@ -1,0 +1,31 @@
+.team__card{
+    width: calc((100%-3*30px)/4);
+    padding-bottom: 24px;;
+
+    font-size: 16px;
+    line-height: 1.19;   
+    background-color: var(--main-bg);
+    text-align: center;
+    
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 4px 4px;
+    
+    
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+}
+.team__card-img{
+    display: block;
+    margin-bottom: 30px;
+}
+.team__card-name{
+    margin-bottom: 10px;
+    font-family: "Roboto-Medium", sans-serif; 
+}
+.team__card-position {
+    margin-bottom: 16px;
+    font-family: "Roboto-Regular", sans-serif;      
+}

@@ -1,0 +1,32 @@
+:root{
+    /*Акцентнтый цвет*/
+    --accent: #2196F3;
+    /*основной цвет фона:*/
+    --main-bg: #fff;
+    /*вторичный цвет фона*/
+    --secondary-bg: #F5F4FA;
+    /*Фон заголовка в "Чем занимаемся"*/
+    --activity-title-bg: rgba(47, 48, 58, 0.8);
+
+    /*основной текст: */
+    --main-text: #212121;
+    /*Вторичный текст: */
+    --secondary-text: #757575;
+    /*текст героя*/
+    --light-text: #ffffff;
+    /*цвет иконок соцсетей */
+    --social-links: #AFB1B8;
+
+    /*footer конаткты текст*/
+    --footer-contacts: rgba(255, 255, 255, 0.6);
+    /*Footer-bg: #2F303A*/
+    --footer-bg: #2F303A;
+    /*бекграунд соцсетей в футере:*/
+    --footer-social-bg: rgba(255, 255, 255, 0.1);
+
+    /*top menu underline*/
+    --nav-underline: #ECECEC;
+
+    /*Портфолио рамка проекта #EEEEEE*/
+    --item-border: #EEEEEE;
+}

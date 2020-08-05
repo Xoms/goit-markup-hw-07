@@ -1,0 +1,37 @@
+.license-agreement{    
+    margin-bottom: 30px;
+}
+.license-agreement__checkbox {
+    position:absolute;
+    visibility: hidden;
+}
+.license-agreement__label{
+    display:flex;
+    align-items: center;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.license-agreement__label::before {
+    content:'';
+    display: block;
+    margin-right: 7px;
+    width: 18px;
+    height: 18px;
+    background-image: url("../images/icons/license-checkbox.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;  
+
+    .license-agreement__checkbox:checked + & {
+        background-image: url('../images/icons/license-checkbox-checked.svg');
+    }    
+}
+
+.license-agreement__link{
+    font-family: "Roboto-Normal", sans-serif;
+    font-size: 14px;
+    line-height: 1.714;
+    text-decoration: underline;
+    color: var(--accent);
+}
