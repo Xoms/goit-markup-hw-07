@@ -18,6 +18,7 @@
 
     &:hover,&:focus{
         outline: none;
+        cursor: pointer;
         color: var(--accent);
     }
 }
