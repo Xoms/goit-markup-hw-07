@@ -1,3 +1,11 @@
-@import './base/module';
-@import './utils/module';
-@import './components/index-module';
+@import './base/base-module';
+@import './utils/utils-module';
+@import './components/common/common-module';
+@import './components/header/header-module';
+@import './components/hero/hero';
+@import './components/features/features_module';
+@import './components/activities/activities_module';
+@import './components/team/team-module';
+@import './components/clients/clients-module';
+@import './components/footer/footer-module';
+@import './components/modal-form/module';

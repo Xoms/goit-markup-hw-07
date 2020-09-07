@@ -1,3 +1,7 @@
-@import './base/module';
-@import './utils/module';
-@import './components/portfolio-module';
+@import './base/base-module';
+@import './utils/utils-module';
+@import './components/common/common-module';
+@import './components/header/header-module';
+@import './components/filters/module';
+@import './components/projects/module';
+@import './components/footer/footer-module';

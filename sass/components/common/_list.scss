@@ -2,6 +2,13 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    color: var(--main-text);  
-    display: flex;  
+    color: var(--main-text);
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $tablet){
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
 }

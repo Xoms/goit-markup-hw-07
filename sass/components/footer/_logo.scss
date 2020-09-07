@@ -1,0 +1,9 @@
+.footer__logo{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width:$desktop){
+        justify-content: start; 
+    }
+}

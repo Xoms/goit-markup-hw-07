@@ -1,0 +1,28 @@
+.top-menu-btn{
+    display: block;
+    margin-left: auto;
+    height: 40px;
+    width: 40px;
+
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+
+    @media screen and (min-width: $tablet){
+        display: none;
+    }
+
+    &:hover, &:focus {
+        color:var(--accent);
+        outline: none;
+    }
+}
+.top-menu-btn__icon{
+    
+    width: 40px;
+    height: 40px;
+    fill: currentColor;
+    &:focus {
+        outline: none;
+    }
+}

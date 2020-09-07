@@ -1,3 +1,9 @@
-.activities__container{
-    padding-bottom: 94px;
+.activities {
+    display: none;
+
+    @media screen and (min-width: $desktop){
+        display: flex;
+        padding-bottom: 94px;
+        padding-top: 0;
+    }
 }

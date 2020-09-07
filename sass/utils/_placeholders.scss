@@ -16,3 +16,15 @@
     line-height: 1.875;
     letter-spacing: 0.06em;
 }
+
+%link {
+    font-family: "Roboto-Medium", sans-serif;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus {
+        outline:none;
+        border:none;
+        color: var(--accent);
+    }       
+}

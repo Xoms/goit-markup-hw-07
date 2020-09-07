@@ -1,15 +1,24 @@
 .footer__contacts-container {
-    margin-right: 69px;
-}
-.footer__logo{
-    margin-bottom: 20px; 
+    margin-bottom: 60px;
+    @media screen and (min-width:$tablet){
+        margin-right: 165px;    
+    }
+    @media screen and (min-width:$desktop){
+        margin-bottom: 0px;
+        margin-right: 69px;    
+    }
 }
 .footer__contacts-item {
     margin-bottom: 9px;
 }
 .footer__address{
-    font-style: normal;          
+    font-style: normal;
  }
  .footer__contacts-link {
-    color: var(--footer-contacts);        
+    @extend %link;
+    display: block;
+    color: var(--footer-contacts);
+    &:not(:last-child){
+        margin-bottom: 9px;
+    }       
 }

@@ -1,6 +1,22 @@
-.subscription-form__controls{
+.subscription-form{
+    @media screen and (min-width:$desktop){
+        margin-left: auto;
+    }
+}
+.subscription-form__controls{   
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
     position: relative;
+    @media screen and (min-width:$tablet){
+        width: 450px;
+    }
+
+    @media screen and (min-width:$desktop){
+        width: auto;
+        justify-content: start;
+    }
 }
 .subscription-form__email-label{
     position: absolute;
@@ -21,9 +37,20 @@
     }
 }
 .subscription-form__email-input {
-    margin-right: 12px;
     height: 50px;
-    width: 358px;
+    width: 100%;
+    margin-bottom: 20px;
+
+    @media screen and (min-width:$tablet){
+        width: 450px;    
+    }
+
+    @media screen and (min-width:$desktop){
+        margin-bottom: 0;
+        margin-right: 12px;
+        width: 358px;    
+    }
+    
 
     color:var(--light-text);
     font-family: "Roboto-Regular", sans-serif;

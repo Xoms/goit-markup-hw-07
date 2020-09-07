@@ -1,8 +1,7 @@
 .clients{
     &__list {
-        flex-wrap: wrap;        
-    }
-    &__item:not(:last-child){
-        margin-right: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;      
     }
 }

@@ -1,0 +1,87 @@
+.top-menu__contacts{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;  
+
+    @media screen and (min-width: $tablet){        
+       width: auto;
+       margin-left: auto;
+
+    }  
+
+    @media screen and (min-width: $desktop){        
+        margin-left: auto;    
+    }  
+
+    @media screen and (min-width: $desktop){        
+        flex-direction: row;
+    }
+}
+       
+.top-menu__contacts-item{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: $tablet){  
+        width: auto;      
+        justify-content: flex-start;
+    }
+
+    &:not(:last-child){
+        margin-bottom: 16px;
+        
+        @media screen and (min-width: $desktop){
+            margin-bottom: 0;   
+            margin-right: 30px;
+        }
+    }
+}
+
+.top-menu__contacts-link{
+    @extend %link;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: var(--secondary-text);  
+    
+    @media screen and (min-width: $tablet){        
+        font-size: 12px;
+    }
+}
+.top-menu__contacts-icon{          
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.icon--phone {
+    width: 10px;  
+    height: 15px;
+
+    @media screen and (min-width: $tablet){        
+        width: 10px;
+        height: 14px;
+    }
+    @media screen and (min-width: $desktop) {        
+        width: 10px;  
+        height: 16px;
+    }
+}
+
+.icon--envelope {
+    width: 16px;  
+    height: 11px;
+
+    @media screen and (min-width: $tablet) {        
+        width: 14px;  
+        height: 10px;
+    }
+
+    @media screen and (min-width: $desktop) {        
+        width: 16px;  
+        height: 12px;
+    }
+
+}

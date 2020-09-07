@@ -9,7 +9,18 @@
 .footer__container {
     padding-top: 60px;
     padding-bottom: 60px;
-    display: flex;
+    text-align: center;
+
+    @media screen and (min-width: $tablet){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    @media screen and (min-width:$desktop){
+        justify-content: start;
+        align-items: baseline;
+        text-align: left;
+    }
 }
 .footer__action-text{     
     display: block;   

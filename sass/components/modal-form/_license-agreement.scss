@@ -8,13 +8,18 @@
 .license-agreement__label{
     display:flex;
     align-items: center;
+    font-size: 12px;
+
+    @media screen and (min-width:$desktop){
+        font-size: 14px;
+    }
     &:hover {
         cursor: pointer;
     }
 }
 .license-agreement__label::before {
     content:'';
-    display: block;
+    display: inline-block;
     margin-right: 7px;
     width: 18px;
     height: 18px;
@@ -27,11 +32,18 @@
         background-image: url('../images/icons/license-checkbox-checked.svg');
     }    
 }
-
+.label-inner{
+    display: inline;
+}
 .license-agreement__link{
     font-family: "Roboto-Normal", sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.714;
     text-decoration: underline;
+    display: inline;
     color: var(--accent);
+
+    @media screen and (min-width:$desktop){
+        font-size: 14px;
+    }
 }

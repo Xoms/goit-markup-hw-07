@@ -1,22 +1,60 @@
 .features__item {
-    width: calc((100%-3*30px)/4);
+    width: 100%;
 
     &:not(:last-child){
-        margin-right: 30px;
+        margin-bottom: 30px;
     }
-    &-icon{
-        height: 70px;
-        width: 70px;
-        color: currentColor;
+
+    @media screen and (min-width: $tablet) {
+        @include elements-width(2);
+        &:not(:last-child){
+            margin-bottom: 0px;
+        }
+        &:nth-child(odd){
+            margin-right: 30px;
+        }
+        &:not(:nth-last-child(-n+2)){
+            margin-bottom: 30px;
+        }
     }
-    &-title{
-        margin-bottom: 10px;
-        text-transform: uppercase;
+
+    @media screen and (min-width: $desktop) {
+        @include elements-width(4);
+
+        &:not(:nth-last-child(-n+2)){
+            margin-bottom: 0;
+        }
+        
+        &:not(:nth-child(4n)){
+            margin-right: 30px;
+        }
+
+        &:not(:nth-last-child(-n + 4)) {
+            margin-bottom: 30px;
+        }
     }
-    &-text{
-        font-family: "Roboto-Regular", sans-serif;
-        font-size: 14px;        
-        line-height: 1.71;
-        color:var(--secondary-text);
+}
+
+.features__item-icon{
+    width: 70px;
+    height: 70px;
+    color: currentColor;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.features__item-title{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media screen and (min-width: $tablet) {
+        text-align: left;
     }
+}
+.features__item-text{
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 14px;        
+    line-height: 1.71;
+    color:var(--secondary-text);
 }
